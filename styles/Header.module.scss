@@ -1,0 +1,142 @@
+.header {
+   margin: 0 auto;
+   width: 100%;
+
+   &Container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 110px;
+   }
+
+   &Nav {
+      display: flex;
+      justify-content: space-between;
+
+      .navItem {
+         margin: 0 25px;
+         font-size: 28px;
+         font-weight: 400;
+         color: #3D3D3D;
+      }
+   }
+
+   &Wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+    }
+}
+
+@media (max-width: 1920px) { 
+   .header {
+
+      &Container {
+         padding: 20px 50px;
+
+         .logo {
+            img {
+               width: 70%;
+            }
+         }
+      }
+
+      &Nav {
+         .navItem {
+            margin: 0 20px;
+            font-size: 22px;
+         }
+      }
+   }
+}
+
+
+@media (max-width: 1440px) { 
+   .header {
+
+      &Container {
+         padding: 20px 50px;
+
+         .logo {
+            img {
+               width: 70%;
+            }
+         }
+      }
+
+      &Nav {
+         .navItem {
+            margin: 0 20px;
+            font-size: 22px;
+         }
+      }
+   }
+}
+
+@media (max-width: 1200px) {
+   .header {
+
+      &Container {
+         padding: 20px 40px;
+
+         .logo {
+            img {
+               width: 70%;
+            }
+         }
+      }
+
+      &Nav {
+         .navItem {
+            margin: 0 20px;
+            font-size: 22px;
+         }
+      }
+   }
+}
+
+@media (max-width: 1024px) {
+   .header {
+
+      &Container {
+         padding: 20px 30px;
+
+         .logo {
+            img {
+               width: 70%;
+            }
+         }
+      }
+
+      &Nav {
+         .navItem {
+            margin: 0 20px;
+            font-size: 22px;
+         }
+      }
+   }
+}
+
+@media (max-width: 576px) {
+   .header {
+
+      &Container {
+         padding: 20px 20px;
+
+         .logo {
+            width: 35%;
+            img {
+               width: 70%;
+            }
+         }
+      }
+
+      &Nav {
+         .navItem {
+            margin: 0 10px;
+            font-size: 14px;
+         }
+      }
+   }
+}

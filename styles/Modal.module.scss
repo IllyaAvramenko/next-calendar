@@ -1,0 +1,102 @@
+.popup {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #272829d2;
+
+  &Content {
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  &Wrapper {
+    display: flex;
+  }
+
+  &Block {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+
+    .top {
+      margin: 0.4em;
+      p {
+       color: #A2A2A2; 
+      }
+    }
+
+    .bottom {
+      input {
+        padding: 14px 70px 14px 20px;
+        border: 2px solid #FDD000;
+        outline: none;
+        font-weight: bold;
+      }
+
+      p {
+        font-weight: bold;
+        color: #272829;
+      }
+    }
+
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &Close {
+    width: 20px;
+    height: 20px;
+    background: #FDD000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    transform: translate(100%, -100%);
+
+    &Wrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    img {
+      width: 50%;
+      height: 50%;
+      transition: 0.1s all ease-in-out;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+}
+
+.active {
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  .popup {
+    &Block {
+      .bottom {
+        input {
+          padding: 5px 0px 5px 8px;
+        }
+      }
+    }
+  }
+}
