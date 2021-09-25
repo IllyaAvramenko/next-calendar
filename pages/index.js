@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <Provider store={store}>
-      <MainLayout>
+      <MainLayout title={'Calendar | Home'}>
         <div  className={s.home}>
           <div className={s.homeContent}>
             <div className={s.title}>

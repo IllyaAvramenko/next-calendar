@@ -4,7 +4,7 @@ import s from '../styles/About.module.scss';
 const About = () => {
    return (
       <>
-         <MainLayout>
+         <MainLayout title={'Calendar | About'}>
             <div className={s.about}>
                <div className={s.aboutContent}>
                   <div className={s.aboutTitle}>
